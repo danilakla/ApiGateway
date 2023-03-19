@@ -1,0 +1,30 @@
+{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/api/Authenticate/norm",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7293
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Authenticate/norm"
+    },
+    {
+      "UpstreamPathTemplate": "/api/Authenticate/test",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7293
+        }
+      ],
+      "DownstreamPathTemplate": "/api/Authenticate"
+
+    }
+  ],
+
+}
